@@ -1,0 +1,21 @@
+server:
+  port: 8081
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /doc/swagger-ui.html
+spring:
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:ms_catalogo
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
